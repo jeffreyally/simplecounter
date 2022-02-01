@@ -20,9 +20,22 @@ let time = 0;
 
 const displaytimer = () => {
 	time = time + 1;
-    let timestring = '00000' + time
-	console.log(time);
-	ReactDOM.render(<Home num1='' num2=''  num3='' num4='' num5='' num6=''/>, document.querySelector("#app"))};
+	let timestring = "00000" + time;
+	//use slice method to extract last 6 digits
+	console.log(timestring);
+	ReactDOM.render(
+		<Home
+			num1="40"
+			num2="|11|"
+			num3="|22|"
+			num4="|33|"
+			num5="|46|"
+			num6="|5"
+			//reread charAt()
+		/>,
+		document.querySelector("#app")
+	);
+};
 //initialize variable outside and increment inside
 setInterval(displaytimer, 1000);
 
