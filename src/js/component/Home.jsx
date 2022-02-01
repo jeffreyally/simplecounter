@@ -7,14 +7,28 @@ import rigoImage from "../../img/rigo-baby.jpg";
 export const Home = (props) => {
 	return (
 		<div class="vw-100 vh-100">
-			<div class="w-100 h-25 bg-dark text-white d-flex">
-				<div class="text-white">clockicon</div>
-				<div class="text-white">{props.num1}</div>
-				<div class="text-white">{props.num2}</div>
-				<div class="text-white">{props.num3}</div>
-				<div class="text-white">{props.num4}</div>
-				<div class="text-white">{props.num5}</div>
-				<div class="text-white">{props.num6}</div>
+			<div class="w-100 h-25 bg-dark text-white d-flex justify-content-evenly align-items-center ">
+				<div class="fs-1 text-white w-10 h-50 d-flex justify-content-evenly align-items-center p-4 border border-warning">
+					<i class="far fa-clock"></i>
+				</div>
+				<div class="fs-1 text-white w-10 h-50 d-flex justify-content-evenly align-items-center p-4 border border-warning">
+					{props.num1}
+				</div>
+				<div class=" fs-1 text-white w-10 h-50 d-flex justify-content-evenly align-items-center  p-4 border border-warning">
+					{props.num2}
+				</div>
+				<div class="fs-1 text-white w-10 h-50 d-flex justify-content-evenly align-items-center  p-4 border border-warning">
+					{props.num3}
+				</div>
+				<div class="fs-1 text-white w-10 h-50 d-flex justify-content-evenly align-items-center  p-4 border border-warning">
+					{props.num4}
+				</div>
+				<div class="fs-1 text-white w-10 h-50 d-flex justify-content-evenly align-items-center  p-4 border border-warning">
+					{props.num5}
+				</div>
+				<div class="fs-1 text-white w-10 h-50 d-flex justify-content-evenly align-items-center p-4 border border-warning">
+					{props.num6}
+				</div>
 			</div>
 		</div>
 	);
